@@ -1,0 +1,11 @@
+
+server:
+  port: 8888
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false #这个项目本身就是注册中心，所以它自己不需要从注册中获取相关信息
+    register-with-eureka: false #这个项目本身就是注册中心，所以它自己是不需要注册到注册中心上去
+  server:
+    enable-self-preservation: false #关闭保护机制
